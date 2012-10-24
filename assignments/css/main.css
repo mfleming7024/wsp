@@ -1,0 +1,15 @@
+body {
+margin: 0 auto;
+width: 900px;
+}
+
+.right_section {
+float: right;
+width: 500px;
+}
+
+.left_section {
+float: left;
+width: 400px;
+}
+
