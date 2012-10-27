@@ -135,21 +135,22 @@ header p {
 
 footer {
 	clear: both;
+	padding-top: 20px;
 }
 
 footer .publish {
 	float: left;
-	width: 33.33333%;
+	width: 25%;
 }
 
 footer .bottom_nav {
 	float: left;
-	width: 33.33333%;
+	width: 50%;
 }
 
 footer .contact_us {
 	float: left;
-	width: 33.33333%;	
+	width: 25%;	
 }
 
 footer #copyright {
