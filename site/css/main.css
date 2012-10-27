@@ -49,14 +49,19 @@ header {
 	background: yellow;
 }
 
-header p, header img {
-	float: left;
-	width: 49%;
-}
-
 header p {
+	float: left;
+	width: 48%;
 	padding-left: 2%;
 	padding-top: 70px;
+	font-family: Futura;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+header img {
+	float: left;
+	width: 	42%
 }
 
 .user_titlebar {
@@ -77,21 +82,30 @@ header p {
 }
 
 .comic {
-	width: 45%;
+	width: 48%;
 	float: left;
 	padding: 1%;	
+	-moz-box-shadow: 0 0 5px 2px #888;
+	-webkit-box-shadow: 0 0 5px 2px #888;
+	box-shadow: 0 0 5px 52x #888;
 }
 
 .comic img {
 	float: left;
-	width: 50%;
+	width: 30%;
+	padding-right: 5px;
+}
+
+.comic h3 {
+	font-family: "Comic Book";
+	font-size: 20px;	
 }
 
 .new_products {
 	clear: both;
 	float: left;
 	width: 33.33333%;	
-	background: yellow;
+	background: green;
 }
 
 .new_products .content_container {
@@ -100,6 +114,7 @@ header p {
 }
 
 .new_products h3 {
+	font-family: Futura;
 	padding-top: 10px;
 	clear: both;
 }	
@@ -113,7 +128,7 @@ header p {
 
 .ad_space img {
 	margin: 0 auto;
-	width: 643px;
+	width: 640px;
 }
 
 .series {
@@ -143,9 +158,15 @@ footer .publish {
 	width: 25%;
 }
 
+footer .publish ul {
+	list-style-type: circle;
+	padding-left: 25px;	
+}
+
 footer .bottom_nav {
 	float: left;
 	width: 50%;
+	text-align: center;
 }
 
 footer .contact_us {
@@ -185,13 +206,8 @@ nav ul li a .active {
 	text-decoration: underline;	
 }
 
-										/* 				Font Styles			*/
-										
-header p {
-	font-family: Futura;
-	font-size: 16px;
-	letter-spacing: 1px;	
-}
+
+
 
 	
 
