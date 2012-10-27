@@ -8,101 +8,100 @@
 
 <body>
 	<header>
-    	<img src="images/logo_header.jpg">
-    	<h1>Mabu Comics</h1>
+    	<a href="index.html"><img src="images/logo_header.jpg"></a>
         <p>The only place for comics.</p>
     </header>
-    <nav>
+    <div class="user_titlebar">
+    	<input type="text" value="Username">
+        <input type="password" value="Password">
+        <input type="button" value="Sign-in">
+        <a href="#">New User?</a>
+        <img src="images/icon_cart.png">
+    </div>
+    <nav class="main">
         <ul>
         	<li><a href="index.html">Home</a></li>
-            <li><a href="novels.html">Graphic Novels</a></li>
+            <li><a href="novels.html">Novels</a></li>
             <li><a href="#">Wallpapers</a></li>
             <li><a href="#">Paintings</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="contact.html" class="active">Contact Us</a></li>
         </ul> 
     </nav>
-    <div class="User_Titlebar">
-    	Username:<input type="text">
-        Password:<input type="password">
-        <input type="button" value="Sign-in">
-        <a href="#">New User?</a>
-        <img src="images/icon_cart.png">
-    </div>
-    	<div class="container">
-            <div class="ad_space">
-                <img src="ad_facebook.jpg">
-            </div>
-            <div class="information">
-             <h2>Contact Form</h2>
-           	 <p>Mabu Comics</p>
-             <p>Email:<a href="mailto:mfleming7024@gmail.com"></a></p>
-             <p>Address: 555 Main Street Orlando, Fl </p>
-             <p>Phone: (407)-555-2134</p>
-            </div>
-            <a href="#">View our Privacy Policy</a>
-   			<form method="post" action="mailto:mfleming7024@gmail.com">
-            	<fieldset class="personal_info">
-                	<legend>Personal Information</legend>
-                    First Name:<input type="text" name="f_name">
-                    Last Name:<input type="text" name="l_name">
-                    E-mail:<input type="email" name="e-mail">
-                </fieldset>
-                <fieldset class="address">
-                	<legend>Address</legend>
-                    Street Address:<input type="text" name="f_name">
-                    City:<input type="text" name="l_name">
-                    State:<select>
-                    				<option>State 1</option>
-                            <option>State 2</option>
-                            <option>State 3</option>
-                            <option>State 4</option>
-                          </select> 
-                    Postal Zip:<input type="number" name="zip">
-                </fieldset>
-                <fieldset class="additional">
-                	<legend>Additional</legend>
-                    Series<select>
-                                <option>Comic 1</option>
-                                <option>Comic 2</option>
-                                <option>Comic 3</option>
-                                <option>Comic 4</option>
-                                <option>Comic 5</option>
-                          </select>
-                     Issue<input type="text" name="issue_number">
-                     Quantity<input type="number" name="quantity">
-                     Questions / Comments<textarea></textarea>
-                 </fieldset>
-            </form>
+    <div class="container">
+        <div class="vertical_ad_space">
+            <img src="ad_facebook.jpg">
         </div>
-		<footer>
-        	<div class="publish">
-            <p>Publish with Us!</p>
-            <ul>
-            	<li>Less Cost</li>
-                <li>More Demand</li>
-            </ul>
-            <img src="">
-        	</div>
-        	<div class="bottom_nav">
-            <nav>
-                <a href="#">Invest</a>
-                <a href="#">Franchise</a>
-                <a href="#">Copywright</a>
-                <a href="#">Advertise</a>
-                <a href="#">Promotional</a>
-                <a href="#">Groups</a>
-                <br>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">FAQ</a>
-                <p>Copyright Mabu Comics 2012</p>
-            </nav>
-            </div>
-            <div class="contact_us">
-                <p>Contact us at <a href="#">publishing@mabucomics.com</a></p>
-            </div>
-        </footer>
+        <div class="information">
+         <h2>Contact Form</h2>
+         <p>Mabu Comics</p>
+         <p>Email:<a href="mailto:mfleming7024@gmail.com"></a></p>
+         <p>Address: 555 Main Street Orlando, Fl </p>
+         <p>Phone: (407)-555-2134</p>
+        </div>
+        <a href="#">View our Privacy Policy</a>
+        <form method="post" action="mailto:mfleming7024@gmail.com">
+            <fieldset class="personal_info">
+                <legend>Personal Information</legend>
+                First Name:<input type="text" name="f_name">
+                Last Name:<input type="text" name="l_name">
+                E-mail:<input type="email" name="e-mail">
+            </fieldset>
+            <fieldset class="address">
+                <legend>Address</legend>
+                Street Address:<input type="text" name="f_name">
+                City:<input type="text" name="l_name">
+                State:<select>
+                                <option>State 1</option>
+                        <option>State 2</option>
+                        <option>State 3</option>
+                        <option>State 4</option>
+                      </select> 
+                Postal Zip:<input type="number" name="zip">
+            </fieldset>
+            <fieldset class="additional">
+                <legend>Additional</legend>
+                Series<select>
+                            <option>Comic 1</option>
+                            <option>Comic 2</option>
+                            <option>Comic 3</option>
+                            <option>Comic 4</option>
+                            <option>Comic 5</option>
+                      </select>
+                 Issue<input type="text" name="issue_number">
+                 Quantity<input type="number" name="quantity">
+                 Questions / Comments<textarea></textarea>
+             </fieldset>
+        </form>
+    </div>
+    <footer>
+        <div class="publish">
+        <p>Publish with Us!</p>
+        <ul>
+            <li>Less Cost</li>
+            <li>More Demand</li>
+        </ul>
+        <img src="">
+        </div>
+        <div class="bottom_nav">
+        <nav>
+            <a href="#">Invest</a>
+            <a href="#">Franchise</a>
+            <a href="#">Copywright</a>
+            <a href="#">Advertise</a>
+            <a href="#">Promotional</a>
+            <a href="#">Groups</a>
+            <br>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ</a>
+            <p>Copyright Mabu Comics 2012</p>
+        </nav>
+        </div>
+        <div class="contact_us">
+            <p>Contact us at <a href="#">publishing@mabucomics.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
 

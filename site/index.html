@@ -8,30 +8,29 @@
 
 <body>
 	<header>
-    	<img src="images/logo_header.jpg">
-    	<h1>Mabu Comics</h1>
+    	<a href="index.html"><img src="images/logo_header.jpg"></a>
         <p>The only place for comics.</p>
     </header>
-    <nav>
+    <div class="user_titlebar">							<!--Sign-in / Cart -->
+    	<input type="text" value="Username">
+        <input type="password" value="Password">
+        <input type="button" value="Sign-in"></button>
+        <a href="#">New User?</a>
+        <img src="images/icon_cart.png">
+    </div>
+    <nav class="main">
         <ul>
         	<li><a href="index.html" class="active">Home</a></li>
-            <li><a href="novels.html">Graphic Novels</a></li>
+            <li><a href="novels.html">Novels</a></li>
             <li><a href="#">Wallpapers</a></li>
             <li><a href="#">Paintings</a></li>
             <li><a href="#">Music</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul> 
     </nav>
-    <div class="User_Titlebar">							<!--Sign-in / Cart -->
-    	Username:<input type="text">
-        Password:<input type="password">
-        <input type="button" value="Sign-in"></button>
-        <a href="#">New User?</a>
-        <img src="images/icon_cart.png">
-    </div>
     <div class="container">
         <div class="main_cta">							<!--4 Comics in gridded format-->
-             <div class="comic_1">
+             <div class="comic">
              	<img src="images/comic1.png">
                 <h3>Title of Comic</h3>
                 <p>Description of Comic</p>
@@ -39,7 +38,7 @@
                 <p>Price</p>
                 <input type="button" value="Buy Now">
              </div>
-             <div class="comic_2">
+             <div class="comic">
              	<img src="images/comic2.png">
                 <h3>Title of Comic</h3>
                 <p>Description of Comic</p>
@@ -47,7 +46,7 @@
                 <p>Price</p>
                 <input type="button" value="Buy Now">
              </div>
-             <div class="comic_3">
+             <div class="comic">
              	<img src="images/comic3.png">
                 <h3>Title of Comic</h3>
                 <p>Description of Comic</p>
@@ -55,7 +54,7 @@
                 <p>Price</p>
                 <input type="button" value="Buy Now">
              </div>
-             <div class="comic_4">
+             <div class="comic">
              	<img src="images/comic4.png">
                 <h3>Title of Comic</h3>
                 <p>Description of Comic</p>
@@ -67,34 +66,47 @@
         <div class="new_products">						<!--New Products Section-->
         	<h3>Wallpapers</h3>
             <hr />
-            <img src="wallpaper1_thumb.jpg">
-            <p>Information about wallpaper 1</p>
-            <a href="wallpapers.html#">Read More</a>
-            <img src="wallpaper2_thumb.jpg">
-            <p>Information about wallpaper 2</p>
-            <a href="wallpapers.html#">Read More</a>
+            <div class="content_container">
+                <img src="wallpaper1_thumb.jpg">
+                <p>Type: JPG (1006KB)</p>
+                <a href="wallpapers.html#">Download Now</a>
+            </div>
+            <div class="content_container">
+                <img src="wallpaper2_thumb.jpg">
+                <p>Type: JPG (1006KB)</p>
+                <a href="wallpapers.html#">Read More</a>
+            </div>
             <h3>Paintings</h3>
             <hr />
-            <img src="painting1_thumb.jpg">
-            <p>Information about painting 1</p>
-            <a href="paintings.html#">Read More</a>
-            <img src="painting2_thumb.jpg">
-            <p>Information about painting 2</p>
-            <a href="paintings.html#">Read More</a>
+            <div class="content_container">
+                <img src="painting1_thumb.jpg">
+                <p>Information about painting 1</p>
+                <a href="paintings.html#">Read More</a>
+            </div>
+            <div class="content_container">
+                <img src="painting2_thumb.jpg">
+                <p>Information about painting 2</p>
+                <a href="paintings.html#">Read More</a>
+            </div>
             <h3>Music</h3>
             <hr />
-            <img src="images/music/lugalbanda_medium.jpg">
-            <p>Information about music 1</p>
-            <a href="music.html#">Read More</a> 
-            <img src="images/music/lugalbanda_medium.jpg">
-            <p>Information about music 2</p>
-            <a href="music.html#">Read More</a> 
+            <div class="content_container">
+                <img src="images/music/lugalbanda_medium.jpg">
+                <p>Information about music 1</p>
+                <a href="music.html#">Read More</a> 
+            </div>
+            <div class="content_container">
+                <img src="images/music/earthtree_medium.jpeg">
+                <p>Information about music 2</p>
+                <a href="music.html#">Read More</a> 
+            </div>
         </div>
         <div class="ad_space">							<!--Facebook Ad-->
-                <img src="images/banners/facebook_sidebar.jpeg">
+                <img src="images/banners/facebook_sidebar.jpg">
         </div>
         <div class="series">							<!--Series Section-->
         	<h3>Series</h3>
+            <hr />
             <img src="images/series/atlantida_thumb_en.jpeg">
             <img src="images/series/devas_thumb_en.jpeg">
             <img src="images/series/discordia_thumb_en.jpeg">
@@ -104,8 +116,10 @@
         <div class="news">								<!--News Section-->
         	<h3>News</h3>
             <hr />
-            <p>5/12/12</p>
-            <p class="article"></p>
+            <dl>
+            	<dt>5/12/12</dt>
+                <dd>asdfasdfasdfasdfasdf</dd>
+            </dl>
         </div>
      </div>
      <footer>											<!--Footer-->
@@ -129,12 +143,12 @@
                 <a href="#">Terms of Service</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">FAQ</a>
-                <p>Copyright Mabu Comics 2012</p>
             </nav>
         </div>
         <div class="contact_us">
         	<p>Contact us at <a href="#">publishing@mabucomics.com</a></p>
         </div>
+        <p id="copyright">Copyright Mabu Comics 2012</p>
      </footer>
      
 </body>
