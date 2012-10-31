@@ -216,27 +216,25 @@ footer #copyright {
 
 										/*			Navigation Styles			*/
 										
-
-nav ul {
-	background: #0F0;	
-}
+nav {
+	float: left;
+	width: 65%;
+}	
 
 nav ul li {
-	float: left;
-	padding-right: 5px;
-	width: 103px;
-	height: 30px;
+	display: inline-block;
 	font-family: "Comic Book";
-	text-align: center;
+	text-align: left;
+	padding: 0px 10px;
 }
 
 nav ul li a {
 	text-decoration: none;
 	color: black;
-	font-size: 19px;	
+	font-size: 21px;	
 }
 
-nav ul li a .active {
+nav ul li a.active {
 	text-decoration: underline;	
 }
 
