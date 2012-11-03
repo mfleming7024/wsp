@@ -15,14 +15,13 @@ http://meyerweb.com/eric/tools/css/reset/
 v1.0 | 20080212
 CSSresetr.com
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, ol, ul, li,
-label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, address, em, font, img, q, s,
+small, strike, strong,
+b, u, i, ol, ul, li,
+label, legend {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,6 +36,12 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+															/*			Web Font					*/
+
+
+
+
 															/* 			Layout Styles				*/
 html {
 	background-image:url('../images/bg_pattern.png');
@@ -53,9 +58,16 @@ body {
 }
 
 body * {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+h3 {
+	font-family: "Futura";	
+	font-size: 2em;
+}
+
 												/* Header */
+												
 header {
 	float: left;
 	width: 20%;	
@@ -64,8 +76,7 @@ header {
 
 header img {
 	float: left;
-	padding-left: 4%;
-	width: 96%;
+	width: 100%;
 	
 }
 												/* User Titlebar */
@@ -112,6 +123,11 @@ header img {
 }
 
 .comic:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+	background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+	background: -o-linear-gradient(top, #3e779d, #65a9d7);
 	-webkit-animation:comic_hover 1s 2 alternate;
 }
 
@@ -127,21 +143,21 @@ header img {
 	border-bottom-left-radius: 20px;	
 }
 
-h3 {
-	font-family: "Futura";	
-	font-size: 2em;
-}
-
-.comic h3 {
-	font-family: "Futura";
-	font-size: 2em;	
-}	
-
 .comic p {
-	line-height: 1.1em;	
-	font-size: 1.8em;
+	line-height: 1.4em;	
+	font-size: 1.6em;
 }
+
+.comic p.price {
+	float: right;
+	width: 50%;
+	font-size: 2em;
+	text-align: right;
+	padding: 20px 10px 0px 0px;
+}
+
 												/* New Products */
+												
 .new_products {
 	clear: both;
 	float: left;
@@ -180,9 +196,15 @@ h3 {
 .new_products p {
 	font-size: 1.2em;	
 	padding: 5px 0px;
-	
 }
-												/* Ad Space */
+
+.new_products h4 {
+	padding: 5px 0px;	
+}
+
+												/*			Ad Space			*/
+												
+												
 .ad_space {
 	float: left;
 	width: 66.66666%;
@@ -194,7 +216,8 @@ h3 {
 	margin: 0 auto;
 	width: 100%;
 }
-												/* Series */
+
+												/*			Series				*/
 .series {
 	float: left;
 	width: 31.33333%;
@@ -206,7 +229,9 @@ h3 {
 	padding-left: 10%;
 	margin: 0 auto;
 }
-												/* News */
+
+												/*			News 				*/
+												
 .news {
 	padding: 1%;
 	float: left;
@@ -227,7 +252,88 @@ dd {
 	line-height: 1.2em;
 }
 
-												/* Footer */
+												/*			Generic Page		*/
+												
+
+.ad_vertical {
+	float: left;
+	width: 20%;
+}
+
+.ad_vertical img {
+	width: 100%;
+}
+
+.generic_content {
+	float: left;
+	width: 78%;
+	padding-left: 2%;
+	overflow: hidden;
+}
+
+.generic_content_section {
+	float: left;
+	width: 100%;
+	background: red;	
+}
+
+.generic_content_section img {
+	float: left;
+	width: 20%;	
+}
+
+.generic_content_section .additional {
+	float: left;
+	width: 80%;	
+	background: yellow;
+}
+
+.pagination {
+	width: 100%;
+	text-align: right;
+	clear: both;	
+	padding-bottom: 10px;
+}
+
+.additional h4 {
+	font-size: 1.6em;	
+}
+
+.additional input {
+	float: right;	
+}
+
+												/*			Contact Page		*/
+												
+												
+section {
+	float: left;
+	width: 80%;
+}
+
+.information h2 {
+	float: left;
+	width: 70%;	
+}
+
+.information aside {
+	float: left;
+	width: 30%; 
+	text-align: left;
+}
+
+#privacy_policy {
+	padding-left: 50px;	
+	clear: both;
+	padding-bottom: 20px;
+}
+
+fieldset {
+	padding: 10px 0px;	
+}
+
+
+												/*			Footer 				*/
 footer {
 	clear: both;
 	padding-top: 30px;
@@ -289,12 +395,13 @@ nav.main ul li {
 nav.main ul li a {
 	text-decoration: none;
 	color: black;
-	font-size: 20px;	
-	font-family: "Comic Book";
+	letter-spacing: 0.2em;
+	font-size: 2em;	
+	font-family: 'Bangers', cursive;
 }
 
 nav.main ul li a:hover {
-	-webkit-animation:mymove 3s infinite alternate;	
+	color: #333399;
 }
 
 nav.main ul li a.active {
@@ -327,6 +434,43 @@ nav.main ul li a.active {
 	
 															/* Button Styles */
 															
+   
+	.buyButton {
+	    float: right;
+	    width: 25%;
+		-moz-box-shadow:inset 0px 1px 0px 0px #000000;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #000000;
+		box-shadow:inset 0px 1px 0px 0px #000000;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b34a), color-stop(1, #7edb70) );
+		background:-moz-linear-gradient( center top, #20b34a 5%, #7edb70 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b34a', endColorstr='#7edb70');
+		background-color:#20b34a;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		border:1px solid #878787;
+		display:inline-block;
+		color:#383838;
+		font-family: 'Bangers', cursive;
+		font-size: 1.6em;
+		font-weight:bold;
+		padding:6px 24px;
+		text-decoration:none;
+	}
+
+	.buyButton:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7edb70), color-stop(1, #20b34a) );
+		background:-moz-linear-gradient( center top, #7edb70 5%, #20b34a 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7edb70', endColorstr='#20b34a');
+		background-color:#7edb70;
+		cursor:pointer;
+	}
+
+	.buyButton:active {
+		position:relative;
+		top:1px;
+	}
+   
    .button {
 	   border-top: 1px solid #96d1f8;
 	   background: #65a9d7;
@@ -343,10 +487,8 @@ nav.main ul li a.active {
 	   box-shadow: rgba(0,0,0,1) 0 1px 0;
 	   text-shadow: rgba(0,0,0,.4) 0 1px 0;
 	   color: #000;
-	   padding-top: 2px;
-	   padding-bottom: 2px;
-	   font-size: 1.4em;
-	   font-family: Georgia, serif;
+	   padding: 0px 4px 0px 0px;
+	   font: 1.4em Futura, Arial, Helvetica, sans-serif;
 	   text-decoration: none;
 	   vertical-align: middle;
    }
