@@ -81,9 +81,8 @@ header img {
 												/* User Titlebar */
 .user_titlebar {
 	float: left;
-	padding: 1%;
+	padding: 1% 1% 9% 1%;
 	width: 78%;	
-	height: 120px;
 	font-size: 1.2em;
 	text-align: right;
 }
@@ -110,9 +109,7 @@ header img {
 	width: 47%;
 	float: left;
 	padding: 5px 1%;
-	margin-top: 10px;
-	margin-right: 0.5%;
-	margin-left: 0.5%;	
+	margin: 10px 0.5% 0px 0.5%;
 	background: #94bdcf;
 	-moz-box-shadow: 0 0 5px 2px #000;
 	-webkit-box-shadow: 0 0 5px 2px #000;
@@ -359,8 +356,7 @@ footer {
 
 .publish p {
 	float: left;
-	padding-left: 5%;
-	padding-bottom: 5px;
+	padding: 0px 0px 5% 5px;
 	width: 90%;
 }
 
@@ -380,7 +376,7 @@ footer #copyright {
 	clear: both;
 	width: 100%;
 	text-align: center;	
-	font: 1.2em "Futura";
+	font: 1.2em "Futura", cursive;
 }
 
 										/*			Navigation Styles			*/
@@ -394,15 +390,14 @@ nav.main {
 nav.main ul li {
 	display: inline-block;
 	text-align: left;
-	padding: 0px 10px;
+	padding: 0px 8px;
 }
 
 nav.main ul li a {
 	text-decoration: none;
 	color: black;
 	letter-spacing: 0.2em;
-	font-size: 2em;	
-	font-family: 'Bangers', cursive;
+	font: 2.1em 'Bangers', cursive;
 }
 
 nav.main ul li a:hover {
@@ -478,7 +473,6 @@ nav.main ul li a.active {
 		display:inline-block;
 		color:#383838;
 		font: 1.6em 'Bangers', cursive;
-		font-weight: bold;
 		padding:6px 5px;
 		text-decoration:none;
 	}
@@ -565,29 +559,53 @@ nav.main ul li a.active {
 	* {
 		font-size: 0.95em;
 	}
+	
+	nav.main {
+		font-size: 1.1em;	
+	}
 }
 
 																									
 																									
 																								
 																																																	
-@media screen and (max-width: 1100px) {			/*Text Resize/Tablet Format*/
-	* {
-		font-size: 0.9em;	
+@media screen and (max-width: 1050px) {			/*Text Resize/Tablet Format*/
+	
+	body {
+		width: 80%;	
 	}
 	
 	.user_titlebar img {
 		width: 10%;	
 	}
 	
+	.user_titlebar input {
+		font-size: 0.9em;	
+	}
+	
 	nav.main {
-		float: ;
+		padding-top: 10px;
+		float: left;
 		width: 100%;
 		font-size: 1.1em;
+		text-align: center;
+	}
+	
+	.comic.hide_object {
+		display: none;
+	}
+	
+	.comic {
+		width: 97%;
 	}
 	
 	.comic h3 {
-		padding-top: 5px;	
+		padding-top: 5px;
+		font-size: 2.8em;	
+	}
+	
+	.comic p {
+		font-size: 2em;	
 	}
 	
 	.news {
@@ -601,6 +619,18 @@ nav.main ul li a.active {
 	
 	h3  {
 		padding-top: 14px;	
+	}
+	
+	h4 {
+		font-size: 1.4em;	
+	}
+	
+	a.button {
+		font-size: 1.6em;
+	}
+	
+	.buybutton {
+		width: 40%;	
 	}
 	
 	.new_products {
@@ -625,6 +655,28 @@ nav.main ul li a.active {
 	}	
 }
 
-@media screen and (max-width: 720px) {			/*Tablet Resize*/
+@media screen and (max-width: 500px) {			/*Mobile Resize*/
+	body {
+		width: 90%;	
+	}
 	
+	.new_products {
+		display: none;	
+	}
+	
+	.ad_space {
+		display: none;	
+	}
+	
+	.series {
+		width: 98%;	
+	}
+	
+	.series h3 {
+		font-size: 2.5em;	
+	}
+	
+	.series img {
+		width: 80%;	
+	}
 }
