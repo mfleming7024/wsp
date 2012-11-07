@@ -41,16 +41,17 @@ ol, ul {
 
 
 label {
-	width: 45%;
+	width: 60%;
 	float: left;
 	padding-top: 10px;
 }
 
 #subscription_monthly, #subscription_yearly {
-	margin-top: 10px;	
+	margin-top: 20px;	
 }
 
 .right_align {
+	padding-top: 20px;
 	width: 40%;	
 	text-align: right;
 }
@@ -127,7 +128,7 @@ header img {
 }
 
 .user_titlebar input[type="button"] {
-	width: 10%;	
+	width: 13%;	
 }
 
 .container {
@@ -303,8 +304,9 @@ dd {
 .generic_content {
 	float: left;
 	width: 78%;
-	padding-left: 2%;
+	padding: 10px 0px 0px 2%;
 	overflow: hidden;
+	border-top: 1px solid #000;
 }
 
 .generic_content_section {
@@ -338,12 +340,29 @@ dd {
 	clear: both;	
 }
 
+p.price {
+	font-size: 2.4em;	
+	text-align: right;
+}
+
 .pagination {
 	width: 100%;
 	text-align: right;
 	clear: both;	
 	padding-bottom: 10px;
 	font-size: 3em;
+}
+
+.pagination a {
+	text-decoration: none;
+	color: #000;
+}
+	
+}
+
+.pagination .active {
+	text-decoration: underline;
+	color: #214887;
 }
 
 												/*			Contact Page		*/
@@ -353,6 +372,7 @@ section {
 	float: left;
 	width: 78%;
 	border-top: 1px solid #000;
+	padding-top: 10px;
 	overflow: hidden;
 }
 
@@ -747,7 +767,22 @@ nav.main ul li a.active {
 	
 	.contact_us {
 		display: none;	
-	}	
+	}
+	
+	section {
+		padding-left: 0;
+	}
+	
+	.add_form_info select {
+		width: 50%;	
+	}
+	
+	.radio {
+		width: 20%;	
+	}
+	
+	
+	
 }
 
 @media screen and (max-width: 800px) {			/*Tablet Text Scale (Generic)*/
@@ -767,6 +802,10 @@ nav.main ul li a.active {
 		width: 90%;	
 	}
 	
+	header img {
+		width: 150%;	
+	}
+	
 	.comic h3 {
 		font-size: 2.4em;	
 	}
@@ -779,10 +818,18 @@ nav.main ul li a.active {
 		font-size: 1.15em;	
 	}
 	
-	.user_titlebar input {
-		display: none;	
+	.user_titlebar input[type="text"], input[type="password"] {
+		display: none;
+	}
+
+	.user_titlebar input[type="button"] {
+		width: 30%;	
 	}
 	
+	.user_titlebar img {
+		width: 20%;	
+	}
+
 	.new_products {
 		display: none;	
 	}
@@ -809,12 +856,18 @@ nav.main ul li a.active {
 	
 	.address {
 		float: left;
-		width: 90%;	
+		width: 94%;	
+	}
+		
+	.add_form_info {
+		width: 94%;	
 	}
 	
-	.additional {
-		width: 90%;	
+	.add_form_info div {
+		width: 30%;	
 	}
-	
-	
+
+	.right_align {
+		text-align: left;
+	}	
 }
