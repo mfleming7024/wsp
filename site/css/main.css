@@ -18,10 +18,10 @@ CSSresetr.com
 
 
 html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, a, abbr, acronym, address, em, font, img, q, s,
+h1, h2, h3, h4, h5, h6, p, a, abbr, 
+acronym, address, em, font, img, q, s,
 small, strike, strong,
-b, u, i, ol, ul, li,
-label, legend {
+b, u, i, ol, ul, li {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,9 +37,47 @@ ol, ul {
 	list-style: none;
 }
 
-															/*			Web Font					*/
+															/*			Testing					*/
 
 
+label {
+	width: 45%;
+	float: left;
+	padding-top: 10px;
+}
+
+#subscription_monthly, #subscription_yearly {
+	margin-top: 10px;	
+}
+
+.right_align {
+	width: 40%;	
+	text-align: right;
+}
+
+section {
+	padding: 10px 0px 0px 2%;	
+}
+
+.address div {
+	float: left;
+	width: 50%;	
+}
+
+div.left_column_div {
+	width: 49%;
+	padding-right: 1%;	
+}
+
+.add_form_info {
+	float:left;
+	width:96%;	
+}
+
+.add_form_info div {
+	float: left;
+	width: 20%;	
+}
 
 
 															/* 			Layout Styles				*/
@@ -55,9 +93,6 @@ body {
 	-moz-box-shadow: 0 0 10px 5px #000;
 	-webkit-box-shadow: 0 0 10px 5px #000;
 	box-shadow: 0 0 10px 5px #000;
-}
-
-body * {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -308,6 +343,7 @@ dd {
 	text-align: right;
 	clear: both;	
 	padding-bottom: 10px;
+	font-size: 3em;
 }
 
 												/*			Contact Page		*/
@@ -315,35 +351,73 @@ dd {
 												
 section {
 	float: left;
-	width: 80%;
+	width: 78%;
+	border-top: 1px solid #000;
+	overflow: hidden;
+}
+
+.personal_info {
+	float: left;
+	width: 47%;
+}
+
+.address {
+	float: left;
+	width: 46%;
+}
+
+.additional {
+	width: 100%;
+}
+
+
+fieldset legend {
+	font: 1.8em 'Futura', cursive;
+}
+
+#f_name, #l_name, #street_address, #comment_box, #e-mail, #city, #state, #zip {
+	width: 100%;
+}
+
+#comment_box {
+	height: 100px;	
+}
+
+input[type="submit"] {
+	float: right;
+	width: 20%;
+	font-size: 2em;
 }
 
 .information h2 {
 	float: left;
-	width: 70%;	
+	width: 60%;	
+	font: 2.8em 'Futura', cursive;
 }
 
 .information aside {
 	float: left;
-	width: 30%; 
+	width: 40%; 
+	font: 1.6em Arial, Helvetica, sans-serif;
 	text-align: left;
 }
 
 #privacy_policy {
-	padding-left: 50px;	
+	display: block;
+	font-size: 1.4em;
+	padding: 5% 0px 40px 50px;
 	clear: both;
-	padding-bottom: 20px;
 }
 
-fieldset {
-	padding: 10px 0px;	
+label {
+	font: 1.6em Arial, Helvetica, sans-serif;	
 }
 
 
 												/*			Footer 				*/
 footer {
 	clear: both;
-	padding-top: 30px;
+	padding-top: 20px;
 	font-size: 1.3em;
 	background: #94bdcf;
 	
@@ -356,7 +430,7 @@ footer {
 
 .publish p {
 	float: left;
-	padding: 0px 0px 5% 5px;
+	padding: 0px 0px 1% 5px;
 	width: 90%;
 }
 
@@ -616,7 +690,28 @@ nav.main ul li a.active {
 		padding-top: 10px;
 		width: 100%;
 	}
+											/*		Generic Pages		*/
+	.ad_vertical {
+		display: none;	
+	}
 	
+	.generic_content {
+		width: 96%;	
+	}
+	
+	.generic_content {
+		font-size: 1.4em;	
+	}
+	
+	.generic_content input {
+		width: 30%;
+		font-size: 2em;	
+	}
+	
+	.container section {
+		width: 100%;	
+	}
+																			
 	h3  {
 		padding-top: 14px;	
 	}
@@ -655,9 +750,37 @@ nav.main ul li a.active {
 	}	
 }
 
+@media screen and (max-width: 800px) {			/*Tablet Text Scale (Generic)*/
+
+	.additional {
+		font-size: 0.75em;	
+	}
+	
+	.generic_content_section input {
+		font-size: 1.2em;		
+	}
+
+}
+
 @media screen and (max-width: 500px) {			/*Mobile Resize*/
 	body {
 		width: 90%;	
+	}
+	
+	.comic h3 {
+		font-size: 2.4em;	
+	}
+	
+	.comic p {
+		font-size: 1.8em;	
+	}
+	
+	nav ul li {
+		font-size: 1.15em;	
+	}
+	
+	.user_titlebar input {
+		display: none;	
 	}
 	
 	.new_products {
@@ -679,4 +802,19 @@ nav.main ul li a.active {
 	.series img {
 		width: 80%;	
 	}
+	
+	.personal_info {
+		width: 94%;	
+	}
+	
+	.address {
+		float: left;
+		width: 90%;	
+	}
+	
+	.additional {
+		width: 90%;	
+	}
+	
+	
 }

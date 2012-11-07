@@ -35,12 +35,11 @@
         <section>
             <div class="information">
              <h2>Contact Form</h2>
-             <aside>
-                 <p>Mabu Comics</p>
-                 <p>Email:<a href="mailto:mfleming7024@gmail.com"></a></p>
-                 <p>Address: 555 Main Street Orlando, Fl </p>
-                 <p>Phone: (407)-555-2134</p>
-              </aside>
+             	<aside>
+                     <p>Mabu Comics</p>
+                     <p>Address: 555 Main Street Orlando, Fl </p>
+                     <p>Phone: (407)-555-2134</p>
+               </aside>
             </div>
             <a href="#" id="privacy_policy">View our Privacy Policy</a>
             <form method="post" action="mailto:mfleming7024@gmail.com">
@@ -59,36 +58,51 @@
                     <input type="text" name="street_address" id="street_address">
                     <label for="city">City:</label>
                     <input type="text" name="city" id="city">
-                                <label for="state">State:</label>
-                                <select name="state" id="state">
-                            <option>State 1</option>
-                            <option>State 2</option>
-                            <option>State 3</option>
-                            <option>State 4</option>
-                          </select> 
+                <div class="left_column_div">    
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option>State 1</option>
+                        <option>State 2</option>
+                        <option>State 3</option>
+                        <option>State 4</option>
+                    </select>
+                 </div>
+                 <div>   
                     <label for="zip">Postal Zip:</label>
-                    <input type="number" name="zip" id="zip">
+                    <input type="number" name="zip" id="zip"> 
+                 </div>
                 </fieldset>
-                <fieldset class="Miscellaneous">
+                <fieldset class="add_form_info">
                     <legend>Additional</legend>
-                                <label for="comic_choice">Series</label>
-                                <select name="comic_choice" id="comic_choice">
-                                <option>War of Destiny</option>
-                                <option>Atlantida</option>
-                                <option>Unmei</option>
-                                <option>Discordia</option>
-                                <option>Eterea</option>
-                          </select>
-                    <label for="subscription_monthly">Monthly</label>
-                  <input type="radio" name="subscription_type" id="subscription_monthly">
-                  <label for="subscription_yearly">Yearly</label>
-                  <input type="radio" name="subscription_type" id="subscription_yearly">
-                  <label for="issue_number">Issue #</label>
+                    <div>
+                    <label for="comic_choice">Series</label>
+                    <select name="comic_choice" id="comic_choice">
+                        <option>War of Destiny</option>
+                        <option>Atlantida</option>
+                        <option>Unmei</option>
+                        <option>Discordia</option>
+                        <option>Eterea</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label for="subscription_monthly" class="right_align">Monthly</label>
+                    <input type="radio" name="subscription_type" id="subscription_monthly">
+                    </div>
+                    <div>
+                    <label for="subscription_yearly" class="right_align">Yearly</label>
+                    <input type="radio" name="subscription_type" id="subscription_yearly">
+                    </div>
+                    <div>
+                    <label for="issue_number">Issue #</label>
                     <input type="text" name="issue_number" id="issue_number">
+                    </div>
+                    <div>
                     <label for="quantity">Quantity</label>
                     <input name="quantity" type="number" id="quantity" value="1">
+                    </div>
                     <label for="comment_box">Questions / Comments</label>
                     <textarea name="comment_box" id="comment_box"></textarea>
+                    <input type="submit" class="add_button">
                  </fieldset>
             </form>
          </section>
