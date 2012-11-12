@@ -98,8 +98,7 @@ body {
 }
 
 h3 {
-	font-family: "Futura";	
-	font-size: 2em;
+	font: 2em Futura, "Trebuchet MS", Arial, sans-serif;	
 }
 
 												/* Header */
@@ -225,7 +224,7 @@ header img {
 }
 
 .new_products h3 {
-	font-family: Futura;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 	padding-top: 20px;
 	clear: both;
 }	
@@ -245,8 +244,7 @@ header img {
 .ad_space {
 	float: right;
 	width: 66.66666%;
-	padding-top: 30px;
-	padding-bottom: 10px;	 
+	padding: 30px 0px 10px 0px;
 }
 
 .ad_space img {
@@ -331,7 +329,7 @@ dd {
 }
 
 .additional h4 {
-	font: 2.6em "Futura";		
+	font: 2.6em Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 .additional input {
@@ -378,7 +376,8 @@ section {
 
 .personal_info {
 	float: left;
-	width: 47%;
+	padding-right: 1%;
+	width: 46%;
 }
 
 .address {
@@ -386,17 +385,17 @@ section {
 	width: 46%;
 }
 
-.additional {
-	width: 100%;
+.add_form_info {
+	width: 95%;
 }
 
 
 fieldset legend {
-	font: 1.8em 'Futura', cursive;
+	font: 1.8em Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 #f_name, #l_name, #street_address, #comment_box, #e-mail, #city, #state, #zip {
-	width: 100%;
+	width: 98%;
 }
 
 #comment_box {
@@ -412,7 +411,7 @@ input[type="submit"] {
 .information h2 {
 	float: left;
 	width: 60%;	
-	font: 2.8em 'Futura', cursive;
+	font: 2.8em Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 .information aside {
@@ -470,7 +469,7 @@ footer #copyright {
 	clear: both;
 	width: 100%;
 	text-align: center;	
-	font: 1.2em "Futura", cursive;
+	font: 1.2em Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 										/*			Navigation Styles			*/
@@ -793,6 +792,10 @@ nav.main ul li a.active {
 	
 	.generic_content_section input {
 		font-size: 1.2em;		
+	}
+	
+	.right_align {
+		padding-right: 10px;	
 	}
 
 }
