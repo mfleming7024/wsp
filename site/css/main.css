@@ -800,7 +800,7 @@ nav.main ul li a.active {
 
 }
 
-@media screen and (max-width: 500px) {			/*Mobile Resize*/
+@media screen and (max-width: 505px) {			/*Mobile Resize*/
 	body {
 		width: 90%;	
 	}
