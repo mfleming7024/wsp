@@ -657,15 +657,12 @@ nav.main ul li a.active {
 		font-size: 1.1em;	
 	}
 }
-
-																									
-																									
-																								
+																																																		
 																																																	
-@media screen and (max-width: 1050px) {			/*Text Resize/Tablet Format*/
+@media screen and (max-width: 1020px) {			/*Text Resize/Tablet Format*/
 	
 	body {
-		width: 80%;	
+		width: 85%;	
 	}
 	
 	.user_titlebar img {
