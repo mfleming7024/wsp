@@ -115,11 +115,17 @@ header img {
 }
 												/* User Titlebar */
 .user_titlebar {
+	position: relative;
 	float: left;
 	padding: 1% 1% 9% 1%;
 	width: 78%;	
 	font-size: 1.2em;
 	text-align: right;
+}
+
+.user_titlebar img {
+	position: relative;
+	top: 5px;
 }
 
 .user_titlebar input {
@@ -128,6 +134,8 @@ header img {
 
 .user_titlebar input[type="button"] {
 	width: 13%;	
+	background-color: #397c9f;
+	color: #FFF;
 }
 
 .container {
@@ -483,7 +491,7 @@ nav.main {
 nav.main ul li {
 	display: inline-block;
 	text-align: left;
-	padding: 0px 8px;
+	padding: 0px 8px 5px 8px;
 }
 
 nav.main ul li a {
@@ -629,7 +637,7 @@ nav.main ul li a.active {
 	border:1px solid #000;
 	display:inline-block;
 	color:#000000;
-	font: 1.4em 'Bangers' ,cursive;
+	font: 1.4em 'Bangers' , cursive;
 	padding:2px 4px;
 	text-decoration:none;
 }
@@ -654,7 +662,7 @@ nav.main ul li a.active {
 	}
 	
 	nav.main {
-		font-size: 1.1em;	
+		font-size: 0.9em;	
 	}
 }
 																																																		
